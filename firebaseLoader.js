@@ -45,6 +45,7 @@ class firebaseLoader{
             _element._countError++;
             if(_element._countLoaded>=_element._importFiles.length){
                 _element._moduleLoaded = true;
+                firebase.initializeApp(_element._config);
                 _element._database = firebase.database();
                 _element._callback(_element);
             }
