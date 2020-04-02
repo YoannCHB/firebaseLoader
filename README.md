@@ -32,9 +32,19 @@ var firebaseConfig = {
     measurementId: ""
 };
 var g = new firebaseLoader(firebaseConfig, function(e){
+
+    /*
+      Get values from database
+    */
     e.getValuesDatabase(function(key,val){
         console.log(key,val);
     });
+    
+    
+    
+    /*
+    Write on the database
+    */
     e.writeDatabase("animes",{val: "Hey"});
 });
 g.importAllModule();
