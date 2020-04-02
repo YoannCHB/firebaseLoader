@@ -3,6 +3,8 @@ Manage firebase in javascript
 - [x] auto imports firebase modules
 - [x] database integration
 -------------------------------------------------
+WARNING: error not supported in min.js version
+-------------------------------------------------
 ##instructions
 - constructor(config: firebaseConfigJson, callback: funtion)
 - constructor(config: firebaseConfigJson, callback: funtion, imp: array)
