@@ -4,6 +4,8 @@ Manage firebase in javascript
 - [x] database integration
 -------------------------------------------------
 ##instructions
+- constructor(config: firebaseConfigJson, callback: funtion)
+- constructor(config: firebaseConfigJson, callback: funtion, imp: array)
 - getModError(): int
 - getModLoaded(): int
 - getDatabase(): firebase
