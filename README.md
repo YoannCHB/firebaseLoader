@@ -43,9 +43,16 @@ var g = new firebaseLoader(firebaseConfig, function(e){
     
     
     /*
-    Write on the database
+      Write on the database
     */
     e.writeDatabase("animes",{val: "Hey"});
+    
+    
 });
+
+/*
+  Imports module of firebase and launch the function above
+  WARNING: obligatory function to launch the script !
+*/
 g.importAllModule();
 ```
