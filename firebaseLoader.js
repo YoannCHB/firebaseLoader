@@ -95,7 +95,7 @@ class firebaseLoader{
     getValueKeyDatabase(key=false,callback=false){
         if(!key){throw "key must be specified !";}
         if(!callback){throw "callback must be specified !";}
-        let leadsRef = database.ref(key);
+        let leadsRef = this._database.ref(key);
         leadsRef.on('value', function(snapshot) {
               var childData = snapshot.node_.children_.root_.value.value_;
               callback(snapshot.val());
